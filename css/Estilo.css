@@ -1,0 +1,60 @@
+/* Inicio da Formatação do Jogo Mata Mosca */
+
+html {
+    cursor: url(../img/mata_mosca.png) 30 30, auto;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mosca {
+    width: 50px;
+    height: 50px;
+}
+
+.mosca1 {
+    width: 100px;
+    height: 100px;
+}
+
+.mosca2 {
+    width: 150px;
+    height: 150px;
+}
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
+
+
+/* Formatação do class Principal */
+.principal {
+    position: absolute;
+    width: 260px;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    border-top: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: 0.7px;
+}
+
+.coracao {
+    float: left;
+}
+
+.cronomentro {
+    float: left;
+    font-size: 20px;
+    color: bold;
+    margin-top: 10px;
+}
+
+/* Fim da Formatação do Jogo Mata Mosca */

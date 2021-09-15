@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+       <!-- Projeto Criado em 2020 -->
+
+      <!-- Tags para SEO -->
+      <meta charset="utf-8">
+      <meta name="description" content="Jogo Mara Mosquito ">
+      <meta name="keywords" content="HTML, CSS, BOOTSTRAP, jS">
+      <meta name="author" content="Marcos Almeida">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Estilo.css -->
+        <link rel="stylesheet" href="./css/Estilo.css">
+        <!-- Normalize.css -->
+        <link rel="stylesheet" href="./css/normalize.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./js/css/bootstrap.min.css">
+        <!-- js -->
+        <script src="./js/js_jogo.js"></script>
+
+        <title> App Game Mata Mosquito - Controlando os pontos de vida ! </title>
+
+    </head>
+    <body onresize="alturaLarguraJogo()">
+
+
+        <!-- Criar o cenário para minha aplicação!! -->
+        <div class="principal">
+            <!-- Corações -->
+            <div class="coracoes">
+                <img id="v1" src="./img/coracao_cheio.png">
+                <img id="v2" src="./img/coracao_cheio.png">
+                <img id="v3" src="./img/coracao_cheio.png">
+            </div>  
+
+            <!-- cronomentro -->
+            <div class="cronomentro">
+                <h4 style="font-weight: 800;"> Tempo Restante: <span id="cronomento"> </span> </h4>
+            </div>
+        </div>
+
+        <!-- Chamando a function posicaoRandomica() da página js -->
+        <script>
+
+            document.getElementById('cronomento').innerHTML = tempo;
+            var criaMosquito = setInterval( function() { posicaoRandomica() }, velocidadeMosquito);
+        </script>
+
+    </body>
+</html>
